@@ -18,7 +18,7 @@
   http://www.imparareaprogrammare.it
 */
 var cats=44;
-var catsinrow=7;
+var catsinrow=6;
 var rows=Math.ceil(cats/catsinrow);
 var lastrow=cats%catsinrow;
 console.log('file di gatti:'+rows);

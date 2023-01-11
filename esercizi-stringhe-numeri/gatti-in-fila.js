@@ -18,3 +18,11 @@
   http://www.imparareaprogrammare.it
 */
 var cats=44;
+var catsinrow=7;
+var divrows=cats/catsinrow;
+var rows=Math.ceil(divrows);
+var lastrow=cats%catsinrow;
+console.log('file di gatti:'+rows);
+console.log('gatti in ultima fila:'+lastrow);
+
+

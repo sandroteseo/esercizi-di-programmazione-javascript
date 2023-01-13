@@ -3,7 +3,7 @@
   Scrivi un programma che dato un numero di secondi, calcoli la quantità di ore, minuti e secondi corrispondenti e
   poi stampi il risultato. L'output avrà solo numeri interi.
 
-  Esempio:
+60  Esempio:
     Input: 12560
     Output: 3 ore, 29 minuti e 20 secondi.
 
@@ -12,4 +12,8 @@
 
   http://www.imparareaprogrammare.it
 */
-var time=1;
+var time=12560;
+var ore=Math.round(time/3600);
+var minuti=Math.round((time%3600)/60);
+var secondi=(time%3600)%60;
+console.log(`${ore} ore, ${minuti} minuti e ${secondi} secondi`);

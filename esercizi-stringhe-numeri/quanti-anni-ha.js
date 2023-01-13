@@ -11,3 +11,9 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var year=2023, birthyear=1975;
+var age= year-birthyear;
+var goarlreached= 100-age;
+console.log('età: '+age);
+console.log('anni mancanti: '+goarlreached);

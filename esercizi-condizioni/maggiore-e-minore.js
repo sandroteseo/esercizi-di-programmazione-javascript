@@ -10,3 +10,19 @@
 
   http://www.imparareaprogrammare.it
 */
+
+
+var a=3, b=-1, c=4, d=-2;
+var control=d;
+
+switch (control) {
+    case a:
+        break;
+    case b:
+        break;
+    case c:
+    case d:
+        console.log(`maggiore = ${c}, minore = ${d}`);
+        break;
+    default:
+}

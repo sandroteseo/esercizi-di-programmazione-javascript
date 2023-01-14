@@ -13,14 +13,7 @@
 
 
 var a=3, b=-1, c=4, d=-2;
-var control=d;
-
-switch (control) {
-    case a:
-    case b:
-    case c:
-    case d:
-        console.log(`maggiore = ${c}, minore = ${d}`);
-        break;
-    default:
-}
+var maggiore=Math.max(a,b,c,d);
+var minore=Math.min(a,b,c,d);
+ console.log(`maggiore = ${maggiore}, minore = ${minore}`);
+      

@@ -15,3 +15,11 @@
 
   http://www.imparareaprogrammare.it
 */
+
+var n=47;
+var input=n%2;
+if (input==0) {
+   console.log('à pari: '+input)
+} else if (input==1) {
+         console.log('à dispari: '+input)
+}

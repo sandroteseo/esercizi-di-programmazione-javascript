@@ -17,9 +17,7 @@ var control=d;
 
 switch (control) {
     case a:
-        break;
     case b:
-        break;
     case c:
     case d:
         console.log(`maggiore = ${c}, minore = ${d}`);

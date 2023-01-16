@@ -21,7 +21,7 @@
 
   http://www.imparareaprogrammare.it
 */
-var scelta=1;
+var scelta=3;
 switch(scelta) {
       
 case 1:

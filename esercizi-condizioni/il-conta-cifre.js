@@ -11,3 +11,9 @@
 
   http://www.imparareaprogrammare.it
 */
+var n=1423;
+var digits= n.toString();
+if (n>=0) {
+  if (n<=9999)
+  console.log(digits.length);
+}

@@ -8,3 +8,8 @@
 
   http://www.imparareaprogrammare.it
 */
+var tabellina=5;
+console.log('tabellina del 5');
+for (var i=0; i<=10; i++) {
+  console.log(`5 * ${i} = ${tabellina*i}`);
+}

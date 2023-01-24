@@ -16,10 +16,10 @@
   http://www.imparareaprogrammare.it
 */
 var array=[];
-array.length=5;
+var num=5;
 var randInt = Math.floor(Math.random()*10);
 
-for (var i=0; i<=array.length; i++) {
-    array[i]=randInt;
+for (var i=1; i<=num; i++) {
+    array[i]=array.push(randInt);
 }
 console.log(array);

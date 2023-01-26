@@ -15,11 +15,15 @@
 
   http://www.imparareaprogrammare.it
 */
-var array=[];
+var elencoNumeri=[];
 var num=5;
 var randInt = Math.floor(Math.random()*10);
 
-for (var i=1; i<=num; i++) {
-    array[i]=array.push(randInt);
+for (var i=0; i<num; i++) {
+    elencoNumeri[i]=elencoNumeri.push(randInt);
 }
-console.log(array);
+console.log(elencoNumeri);
+
+var invertnum=[];
+invertnum=elencoNumeri.reverse();
+console.log(invertnum);

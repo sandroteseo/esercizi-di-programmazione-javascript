@@ -17,10 +17,13 @@
 */
 var elencoNumeri=[];
 var num=5;
-var randInt = Math.floor(Math.random()*10);
+function getRandomIntInclusive(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 
 for (var i=0; i<num; i++) {
-    elencoNumeri[i]=elencoNumeri.push(randInt);
+    elencoNumeri[i]=elencoNumeri.push(getRandomIntInclusive(1, 20));
 }
 console.log(elencoNumeri);
 

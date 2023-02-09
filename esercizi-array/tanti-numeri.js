@@ -12,3 +12,6 @@
 
   http://www.imparareaprogrammare.it
 */
+var a=[3, 5, 10, 2, 8];
+var media= (a[0]+a[1]+a[2]+a[3]+a[4])/5;
+console.log(media);

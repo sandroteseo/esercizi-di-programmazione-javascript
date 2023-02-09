@@ -7,3 +7,8 @@
 
   http://www.imparareaprogrammare.it
 */
+var blind=[];
+for (var i=0; i<100; i++) {
+  blind.push(Math.floor(Math.random() * (100-1) + 1));
+}
+console.log(blind);

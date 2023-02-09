@@ -13,10 +13,16 @@
   http://www.imparareaprogrammare.it
 */
 var a=[3, 5, 10, 2, 8];
+var amin=[];
+var asup=[];
 var media= (a[0]+a[1]+a[2]+a[3]+a[4])/5;
 console.log(media);
-a.forEach(function(item){
+a.forEach(function(item,){
   if (item<media) {
-    console.log(item);
+    amin.push(item);
+  } else {
+    asup.push(item);
   }
 });
+console.log(amin);
+console.log(asup);

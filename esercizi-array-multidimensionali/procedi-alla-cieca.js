@@ -22,7 +22,6 @@ for (var i=0; i<20; i++) {
  blind[3].push(Math.floor(Math.random() * (100-1) + 1));
  blind[4].push(Math.floor(Math.random() * (100-1) + 1));
 }
-
 console.log(blind[0]);
 console.log(blind[1]);
 console.log(blind[2]);

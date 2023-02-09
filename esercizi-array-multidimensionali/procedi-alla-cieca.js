@@ -8,7 +8,23 @@
   http://www.imparareaprogrammare.it
 */
 var blind=[];
-for (var i=0; i<100; i++) {
-  blind.push(Math.floor(Math.random() * (100-1) + 1));
+blind[0]=[];
+blind[1]=[];
+blind[2]=[];
+blind[3]=[];
+blind[4]=[];
+
+
+for (var i=0; i<20; i++) {
+ blind[0].push(Math.floor(Math.random() * (100-1) + 1));
+ blind[1].push(Math.floor(Math.random() * (100-1) + 1));
+ blind[2].push(Math.floor(Math.random() * (100-1) + 1));
+ blind[3].push(Math.floor(Math.random() * (100-1) + 1));
+ blind[4].push(Math.floor(Math.random() * (100-1) + 1));
 }
-console.log(blind);
+
+console.log(blind[0]);
+console.log(blind[1]);
+console.log(blind[2]);
+console.log(blind[3]);
+console.log(blind[4]);

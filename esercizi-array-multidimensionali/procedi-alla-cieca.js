@@ -14,9 +14,9 @@ blind[2]=[];
 blind[3]=[];
 blind[4]=[];
 
-blind.forEach(function(index) {
+blind.forEach(function(item) {
    for (var i=0; i<20; i++) {
-     index.push(Math.floor(Math.random() * (100-1) + 1));
+     item.push(Math.floor(Math.random() * (100-1) + 1));
     } 
-   console.log(index);
+   console.log(item);
 });

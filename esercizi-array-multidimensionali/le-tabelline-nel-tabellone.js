@@ -11,7 +11,7 @@
     
   http://www.imparareaprogrammare.it
 */
-var tabellone=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var tabellone=['x', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 tabellone[0]=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 tabellone[1]=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 tabellone[2]=[0, 2, 4, 6, 8 , 10, 12, 14, 16, 18, 20];
@@ -24,6 +24,7 @@ tabellone[8]=[0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80]
 tabellone[9]=[0, 9, 18, 27, 36, 45, 54, 63, 72, 81, 90 ];
 tabellone[10]=[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 
-tabellone.forEach(function(index) {
-  console.log(index);
+
+tabellone.forEach(function(item) {
+  console.log(item);
 });

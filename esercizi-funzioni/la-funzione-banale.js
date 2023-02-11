@@ -16,3 +16,15 @@
     
   http://www.imparareaprogrammare.it
 */
+var n=8;
+var m=8;
+
+function identity (one, two) {
+  if (one===two) {
+    console.log('TRUE');
+  } else {
+    console.log('FALSE');
+  }
+}
+
+console.log(identity(n, m));

@@ -13,3 +13,38 @@
 
   http://www.imparareaprogrammare.it
 */
+var a=5, b=12, c=7;
+
+function moreNum (one, two, three) {
+  if (one>two && one>three) {
+    console.log(one);
+  }
+
+  if (two>one && two>three) {
+    console.log(two);
+  }
+
+  if (three>one && three>two) {
+    console.log(three);
+  }
+
+}
+
+function lessNum (one, two, three) {
+  if (one<two && one<three) {
+    console.log(one);
+  }
+
+  if (two<one && two<three) {
+    console.log(two);
+  }
+
+  if (three<one && three<two) {
+    console.log(three);
+  }
+
+}
+console.log('maggiore: ');
+console.log(moreNum(a, b, c));
+console.log('minore: ');
+console.log(lessNum(a, b, c));

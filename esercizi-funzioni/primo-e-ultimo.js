@@ -13,6 +13,8 @@
 
   http://www.imparareaprogrammare.it
 */
+
+/*
 var a=5, b=12, c=7;
 
 function moreNum (one, two, three) {
@@ -48,3 +50,21 @@ console.log('maggiore: ');
 console.log(moreNum(a, b, c));
 console.log('minore: ');
 console.log(lessNum(a, b, c));
+*/
+
+var num=[7, 12, 9, -5];
+
+function moreNum(array) {
+  return Math.max(...array);
+}
+
+function lessNum(array1) {
+  return Math.min(...array1);
+}
+
+console.log('maggiore: ');
+console.log(moreNum(num));
+console.log('minore: ');
+console.log(lessNum(num));
+
+

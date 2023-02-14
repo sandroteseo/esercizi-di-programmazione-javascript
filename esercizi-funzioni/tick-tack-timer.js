@@ -14,3 +14,15 @@
             
   http://www.imparareaprogrammare.it
 */
+
+var array=[];
+function counter (start) {
+
+ while (start > 0) {
+    start=start-1;
+    }
+  var array=[start];
+  return array;
+  
+}
+console.log(counter(8));

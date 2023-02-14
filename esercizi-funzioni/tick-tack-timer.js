@@ -14,8 +14,6 @@
             
   http://www.imparareaprogrammare.it
 */
-
-var array=[];
 function counter (start) {
 
  while (start > 0) {

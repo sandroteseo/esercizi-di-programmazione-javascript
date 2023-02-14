@@ -20,7 +20,5 @@ function counter (start) {
     start=start-1;
     console.log(start);
     }
-  
-  
 }
 counter(8);

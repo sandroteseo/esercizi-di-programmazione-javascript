@@ -12,3 +12,18 @@
 
   http://www.imparareaprogrammare.it
 */
+
+function factorial (num) {
+  var f=1;
+
+  for (var i=1; i<=num; i++) {
+    f=f*i;
+  }
+
+  return f;
+}
+var rand=Math.floor(Math.random()*10) + 1;
+console.log(`il fattoriale di ${rand} è : `);
+console.log(factorial(rand));
+
+

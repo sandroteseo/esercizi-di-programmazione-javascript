@@ -9,3 +9,9 @@
 
   http://www.imparareaprogrammare.it
 */
+var car = {
+  mark: 'Toyota',
+  model: 'Yaris'
+}
+var garage=['Toyota Yaris', 'Toyota Prius', 'Toyota Corolla', 'Toyota Aygo', 'Fiat Panda', 'Fiat Punto'];
+console.log(garage.findIndex(car.mark));

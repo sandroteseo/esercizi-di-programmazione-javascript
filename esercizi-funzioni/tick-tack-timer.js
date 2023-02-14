@@ -20,9 +20,9 @@ function counter (start) {
 
  while (start > 0) {
     start=start-1;
+    console.log(start);
     }
-  var array=[start];
-  return array;
+  
   
 }
-console.log(counter(8));
+counter(8);

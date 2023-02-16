@@ -14,5 +14,5 @@ var car = {
   model: 'Yaris'
 }
 var garage=['Toyota Yaris', 'Toyota Prius', 'Toyota Corolla', 'Toyota Aygo', 'Fiat Panda', 'Fiat Punto'];
-var auto= garage.findIndex('Toyota');
+var auto= garage.filter(item => item.includes(car.mark));
 console.log(auto);

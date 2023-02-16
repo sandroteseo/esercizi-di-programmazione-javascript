@@ -13,3 +13,14 @@
 
   http://www.imparareaprogrammare.it
 */
+var birthday = {
+  day: 19,
+  month: 7,
+  year: 1975
+}
+ var date1=new Date();
+if (birthday==date1) {
+  console.log(date1);
+} else {
+  console.log("La data non è valida!");
+}

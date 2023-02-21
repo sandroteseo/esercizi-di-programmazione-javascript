@@ -22,3 +22,4 @@
 
   http://www.imparareaprogrammare.it
 */
+var day = 5;

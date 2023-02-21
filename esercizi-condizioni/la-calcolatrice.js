@@ -28,3 +28,33 @@
 
   http://www.imparareaprogrammare.it
 */
+var a=5, b=6;
+var operator = 'media';
+
+switch(operator) {
+      
+  case 'somma':
+    console.log(a+b);;
+    break;
+  case 'sottrazione':
+    console.log(a-b);
+    break;
+  case 'moltiplicazione':
+    console.log(a*b);
+    break;
+  case 'divisione':
+    console.log(a/b);
+    break;
+  case 'modulo':
+    console.log(a%b);
+    break;
+  case 'potenza':
+    console.log(Math.pow(a,b));
+    break;
+  case 'media':
+    console.log((a+b)/2);
+    break;
+  default:
+    console.log('Errore! Operazione non valida!');
+    
+  }

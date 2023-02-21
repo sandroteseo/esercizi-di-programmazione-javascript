@@ -16,6 +16,12 @@
   http://www.imparareaprogrammare.it
 */
 
-var n=47;
+var n= Math.floor(Math.random() * (100 - 1) + 1);
 var input=n%2;
-console.log(input);
+console.log(n);
+
+if (input>0) {
+  console.log('dispari: '+ input);
+} else {
+  console.log('pari: '+ input);
+}

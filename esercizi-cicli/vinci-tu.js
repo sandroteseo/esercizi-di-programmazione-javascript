@@ -30,5 +30,5 @@ for (var i=1; i<=n; i++) {
   }
 }
 
-console.log(giocatore1);
-console.log(giocatore2);
+console.log('punteggio giocatore 1: '+ giocatore1);
+console.log('punteggio giocatore 2: '+ giocatore2);

@@ -45,3 +45,45 @@
 
   http://www.imparareaprogrammare.it
 */
+var date=28;
+var day=2;
+
+
+
+  for (var i=1; i<=date; i++) {
+    var today=i;
+
+   
+    if (day<=6) {
+      switch(day) {
+      
+        case 0:
+          console.log('Lun '+ today);
+          break;
+        case 1:
+          console.log('Mar '+ today);
+          break;
+        case 2:
+          console.log('Mer '+ today);
+          break;
+        case 3:
+          console.log('Gio '+ today);
+          break;
+        case 4:
+          console.log('Ven '+ today);
+          break;
+        case 5:
+          console.log('Sab '+ today);
+          break;
+        case 6:
+          console.log('Dom '+ today);
+          break;
+         
+        }
+      day++;
+    } else {
+      day=0;
+      console.log('Lun '+ today);
+      day++;
+    }
+  }

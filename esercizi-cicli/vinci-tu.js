@@ -14,3 +14,21 @@
 
   http://www.imparareaprogrammare.it
 */
+var n=20;
+var giocatore1=0;
+var giocatore2=0;
+
+for (var i=1; i<=n; i++) {
+  var dado=Math.floor(Math.random() * (6-1) + 1);
+  var div=i%2;
+  if (div===1) {
+    giocatore1 = giocatore1 + dado;
+  } else {
+    if (div===0) {
+      giocatore2 = giocatore2 + dado;
+    }
+  }
+}
+
+console.log(giocatore1);
+console.log(giocatore2);

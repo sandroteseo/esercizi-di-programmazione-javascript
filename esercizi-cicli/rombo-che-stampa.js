@@ -18,14 +18,14 @@
 */
 var oddnum=5;
 var string = 'x'; 
-for (var i=0; i<=oddnum; i++) {
-    var iter=i;
-    if (iter<3) {
-      console.log(string + '\t');
+for (var i=1; i<=oddnum; i++) {
+    if (string.length<=oddnum) {
+      console.log('\t'+string);
       string='xx'+ string; 
     } else {
       string = string.slice(4);
-      console.log(string);
+      console.log('\t'+string);
+      string = string.slice(2);
     }
   }
    

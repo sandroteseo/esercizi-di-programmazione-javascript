@@ -3,7 +3,7 @@
   Scrivi un programma che dato un numero dispari stampi un rombo di lettere.
 
   Esempio:
-    Input : 5
+    Input : 5 
     Output:
             X
            XXX
@@ -17,12 +17,15 @@
   http://www.imparareaprogrammare.it
 */
 var oddnum=5;
-for (var i=1; i<=5; i++) {
-  var string = 'x'; 
-  while(string.length>0) {
-    if (string.length<5) {
-    console.log(string + '\t');
-    string=string + string.repeat(2); 
+var string = 'x'; 
+for (var i=0; i<=oddnum; i++) {
+    var iter=i;
+    if (iter<3) {
+      console.log(string + '\t');
+      string='xx'+ string; 
+    } else {
+      string = string.slice(-3);
+      console.log(string);
     }
   }
-}
+   

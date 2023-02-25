@@ -24,7 +24,7 @@ for (var i=0; i<=oddnum; i++) {
       console.log(string + '\t');
       string='xx'+ string; 
     } else {
-      string = string.slice(-3);
+      string = string.slice(4);
       console.log(string);
     }
   }

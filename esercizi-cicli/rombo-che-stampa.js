@@ -16,16 +16,39 @@
   
   http://www.imparareaprogrammare.it
 */
-var oddnum=5;
-var string = 'x'; 
-for (var i=1; i<=oddnum; i++) {
-    if (string.length<=oddnum) {
-      console.log('\t'+string);
-      string='xx'+ string; 
-    } else {
-      string = string.slice(4);
-      console.log('\t'+string);
-      string = string.slice(2);
+let n = 7;
+
+// Controllo se il numero è dispari
+if (n % 2 === 0) {
+  console.log("Il numero deve essere dispari.");
+} else {
+  let diamond = "";
+
+  // Stampa la metà superiore del rombo
+  for (let i = 0; i < Math.floor(n/2) + 1; i++) {
+    let row = "";
+    for (let j = 0; j < n; j++) {
+      if (j >= Math.floor(n/2) - i && j <= Math.floor(n/2) + i) {
+        row += "X";
+      } else {
+        row += " ";
+      }
     }
+    diamond += row + "\n";
   }
-   
+
+  // Stampa la metà inferiore del rombo
+  for (let i = Math.floor(n/2) - 1; i >= 0; i--) {
+    let row = "";
+    for (let j = 0; j < n; j++) {
+      if (j >= Math.floor(n/2) - i && j <= Math.floor(n/2) + i) {
+        row += "X";
+      } else {
+        row += " ";
+      }
+    }
+    diamond += row + "\n";
+  }
+
+  console.log(diamond);
+}

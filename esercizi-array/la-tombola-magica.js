@@ -19,3 +19,54 @@
 
   http://www.imparareaprogrammare.it
 */
+var mycoupon = [5, 9, 17, 24, 32, 38, 48, 55, 64, 82];
+var emptybox = [];
+var result = [];
+for (var i=0; i<10; i++) {
+  var num = Math.floor(Math.random() * (90 - 1) +1);
+  if (emptybox.indexOf(num) === -1) {
+    // Se non lo è, aggiungilo all'array
+    emptybox.push(num);
+  } else {
+    // Se lo è, decrementa i per ripetere il ciclo
+    i--;
+  }
+
+}
+
+
+emptybox.forEach(element => {
+for (var j=0; j<10; j++) {
+     if (element == mycoupon[j]) {
+      result.push(element)
+     }
+}
+});
+
+var comb = result.length;
+if (comb<2) {
+  console.log('Mi dispiace, hai perso!');
+} else {
+  if (comb==2) {
+    console.log('Hai fatto ambo');
+  } else {
+    if (comb==3) {
+      console.log('Hai fatto terno');
+    } else {
+      if (comb==4) {
+        console.log('Hai fatto quaterna');
+      } else {
+        if (comb>=5 && comb<10) {
+          console.log('Hai fatto cinquina');
+        } else {
+          if (comb==10) {
+            console.log('Hai fatto tombola');
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

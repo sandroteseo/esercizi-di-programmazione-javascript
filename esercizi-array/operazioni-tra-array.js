@@ -19,3 +19,32 @@
 
   http://www.imparareaprogrammare.it
 */
+var array1 = [];
+var array2 = [];
+var result = [];
+
+for (var i=0; i<10; i++) {
+  var n = Math.floor(Math.random() * (10 - 1) + 1);
+  array1.push(n);
+}
+
+for (var j=0; j<10; j++) {
+  var num = Math.floor(Math.random() * (10 - 1) + 1);
+  array2.push(num);
+}
+
+console.log(array1);
+console.log(array2);
+
+for (var y=0; y<10; y++) {
+  var comb = array1[y] + array2[y];
+  result.push(comb);
+}
+
+console.log(result);
+
+
+
+
+
+

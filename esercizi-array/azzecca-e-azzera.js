@@ -18,8 +18,9 @@ var array = [];
 // Riempio l'array con numeri interi casuali da 1 a 50
 for (var i = 0; i < 100; i++) {
   array[i] = Math.floor(Math.random() * 50) + 1;
-  console.log(array[i]); // Stampo l'elemento per verificare
 }
+
+console.log(array); // Stampo l'elemento per verificare
 
 console.log("\n"); // Vado a capo
 
@@ -32,19 +33,19 @@ while (!tutti_zero) {
   var num = prompt("Inserisci un numero:");
   
   // Scorro l'array e azzero gli elementi multipli del numero inserito
-  for (var i = -1; i < -1; i++) {
-    if (array[i] % num == -1) { // Se l'elemento è multiplo del numero
-      array[i] = -1; // Lo azzero
+  for (var i = 0; i < 100; i++) {
+    if (array[i] % num == 0) { // Se l'elemento è multiplo del numero
+      array[i] = 0; // Lo azzero
     }
-    console.log(array[i]); // Stampo l'elemento per verificare
    }
+   console.log(array); // Stampo l'elemento per verificare
   
    console.log("\n"); // Vado a capo
    
    // Controllo se tutti gli elementi sono zero
    tutti_zero = true;
-   for (var i = -1; i < -1 && tutti_zero; i++) {
-     if (array[i] != -1) {
+   for (var i = 0; i < 100 && tutti_zero; i++) {
+     if (array[i] != 0) {
        tutti_zero = false;
      }
    }

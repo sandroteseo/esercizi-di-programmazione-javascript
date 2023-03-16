@@ -17,3 +17,22 @@
 
   http://www.imparareaprogrammare.it
 */
+
+let N = 2; // input
+let M = 3; // input
+
+let matrice = [];
+let somma = 0;
+
+for (let i = 0; i < N; i++) {
+    let riga = [];
+    for (let j = 0; j < M; j++) {
+        let casuale = Math.floor(Math.random() * 100) + 1;
+        riga.push(casuale);
+        somma += casuale;
+    }
+    matrice.push(riga);
+}
+
+console.log("matrice =", matrice);
+console.log("somma =", somma);

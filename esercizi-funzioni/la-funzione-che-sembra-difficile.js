@@ -10,3 +10,17 @@
     
   http://www.imparareaprogrammare.it
 */
+var num = 123456, nth = 3;
+
+function countPosition(n, k) {
+  var negative = -(k);
+  var str = n.toString();
+  var result = str.at(negative);
+  if (k>str.length) {
+    return 0;
+  } else {
+    return result;
+  }
+}
+
+console.log(countPosition(num, nth));

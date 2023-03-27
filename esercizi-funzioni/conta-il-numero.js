@@ -12,3 +12,17 @@
     
   http://www.imparareaprogrammare.it
 */
+var n = 982;
+
+function counter (num) {
+  var str = num.toString();
+  var result = str.length;
+  return result;
+}
+
+if (n<=9999) {
+  console.log(`il numero ${n} è formato da  ${counter(n)} cifre`);
+  } else {
+    console.log(`Error!!!`);
+  }
+

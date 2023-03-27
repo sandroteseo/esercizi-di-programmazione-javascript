@@ -8,3 +8,11 @@
 
   http://www.imparareaprogrammare.it
 */
+var num = 58;
+
+function numRandom(n) {
+  var result = Math.floor(Math.random() * (n - 1) + 1);
+  return result;
+}
+
+console.log(numRandom(num));

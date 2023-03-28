@@ -20,9 +20,7 @@ function summation (m, d) {
   m--;
   if (m>0) {
     var position = calendar.slice(0, m);
-    var sum = position.reduce(function (acc, curv) {
-        return acc + curv;
-    });
+    var sum = position.reduce((acc, curv) => acc + curv);
   } else {
     sum = 0;
   }

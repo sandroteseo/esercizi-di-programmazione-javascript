@@ -28,4 +28,4 @@ function summation (m, d) {
   return sum + d;
 }  
 
-console.log(summation(month, day));
+console.log(`oggi ${day}/${month} dall'inizio dell'anno sono passati ${summation(month, day)} giorni`);

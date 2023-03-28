@@ -14,3 +14,20 @@
           
   http://www.imparareaprogrammare.it
 */
+var calendar = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+var month = 3, day = 28;
+function summation (m, d) {
+  m--;
+  if (m>0) {
+    var position = calendar.slice(0, m);
+    var sum = position.reduce(function (acc, curv) {
+        return acc + curv;
+    });
+  } else {
+    sum = 0;
+  }
+ 
+  return sum + d;
+}  
+
+console.log(summation(month, day));

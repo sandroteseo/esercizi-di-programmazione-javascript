@@ -15,3 +15,46 @@
 
   http://www.imparareaprogrammare.it
 */
+var one = 15, two = 30, three = 15;
+
+function thePsychic (a, n, b) {
+  var first = Math.abs(a - n);
+  var second = Math.abs(b - n);
+
+  if (first === second) {
+    return 0;
+  } else {
+    if ( second<first) {
+      return 1;
+    } else {
+      if (first<second) {
+        return -1;
+      }
+    }
+  }
+}
+
+console.log(thePsychic(one, two, three));
+
+/*
+var one = Number(window.prompt("il primo giocatore inserisce un numero", ""));
+var num = Math.floor(Math.random() * (100 - 1) + 1);
+var two = Number(window.prompt("il secondo giocatore inserisce un numero", ""));
+
+function thePsychic (a, n, b) {
+  var first = a - n;
+  var second = b - n;
+
+  if (first === 0) {
+    return 'il primo';
+  } else {
+    if ( second === 0) {
+      return 'il secondo';
+    } else {
+       return 'nessun';
+    }
+  }
+}
+
+console.log(`${thePsychic(one, two, three)} giocatore ha vinto, è stato estratto il numero ${num}`);
+*/

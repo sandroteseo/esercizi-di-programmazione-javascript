@@ -37,9 +37,10 @@ function thePsychic (a, n, b) {
 console.log(thePsychic(one, two, three));
 
 /*
-var one = Number(window.prompt("il primo giocatore inserisce un numero", ""));
+
+var one = prompt("il primo giocatore inserisce un numero:");
 var num = Math.floor(Math.random() * (100 - 1) + 1);
-var two = Number(window.prompt("il secondo giocatore inserisce un numero", ""));
+var two = prompt("il secondo giocatore inserisce un numero:");
 
 function thePsychic (a, n, b) {
   var first = a - n;
@@ -56,5 +57,5 @@ function thePsychic (a, n, b) {
   }
 }
 
-console.log(`${thePsychic(one, two, three)} giocatore ha vinto, è stato estratto il numero ${num}`);
+console.log(`${thePsychic(one, num, two)} giocatore ha vinto, è stato estratto il numero ${num}`);
 */

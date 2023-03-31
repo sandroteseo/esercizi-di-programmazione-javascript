@@ -15,47 +15,38 @@
 
   http://www.imparareaprogrammare.it
 */
-var one = 15, two = 30, three = 15;
 
-function thePsychic (a, n, b) {
-  var first = Math.abs(a - n);
-  var second = Math.abs(b - n);
-
-  if (first === second) {
+function calcolaVicinanza(a, b, n) {
+  if (Math.abs(n - a) === Math.abs(n - b)) {
     return 0;
+  } else if (Math.abs(n - a) > Math.abs(n - b)) {
+    return 1;
   } else {
-    if ( second<first) {
-      return 1;
-    } else {
-      if (first<second) {
-        return -1;
-      }
-    }
+    return -1;
   }
 }
 
-console.log(thePsychic(one, two, three));
+// Esempio di utilizzo
+const n = Math.floor(Math.random() * 100) + 1; // Genera un numero casuale tra 1 e 100
+console.log(`Il numero da indovinare è ${n}`);
 
-/*
+let utente1 = parseInt(prompt("Utente 1, inserisci un numero"));
+let utente2 = parseInt(prompt("Utente 2, inserisci un numero"));
 
-var one = prompt("il primo giocatore inserisce un numero:");
-var num = Math.floor(Math.random() * (100 - 1) + 1);
-var two = prompt("il secondo giocatore inserisce un numero:");
+while (utente1 !== n && utente2 !== n) {
+  const vicinanzaUtente1 = calcolaVicinanza(utente1, utente2, n);
+  const vicinanzaUtente2 = calcolaVicinanza(utente2, utente1, n);
 
-function thePsychic (a, n, b) {
-  var first = a - n;
-  var second = b - n;
-
-  if (first === 0) {
-    return 'il primo';
-  } else {
-    if ( second === 0) {
-      return 'il secondo';
-    } else {
-       return 'nessun';
-    }
+  if (vicinanzaUtente1 === vicinanzaUtente2) {
+    console.log("Pareggio!");
+  } else if (vicinanzaUtente1 === -1) {
+    console.log("Ha vinto l'utente 1!");
+    break;
+  } else if (vicinanzaUtente2 === -1) {
+    console.log("Ha vinto l'utente 2!");
+    break;
   }
-}
 
-console.log(`${thePsychic(one, num, two)} giocatore ha vinto, è stato estratto il numero ${num}`);
-*/
+  utente1 = parseInt(prompt("Utente 1, inserisci un numero"));
+  utente2 = parseInt(prompt("Utente 2, inserisci un numero"));
+}

@@ -21,35 +21,29 @@
   http://www.imparareaprogrammare.it
 */
 const digit = 12;
-var array = [];
-
-function primes (num) {
-  for (var i=1; i<=num; i++) {
-    var n = num%i;
-    if (n==0) {
-      array.push(i);
-    };
+function isPrime(n) {
+  if (n <= 1) {
+      return false;
   };
-  if (array.length==2) {
-    return true;
-  } else {
-    return false;
+  for (let i = 2; i < n; i++) {
+      if (n % i === 0) {
+          return false;
+      };
+  };
+  return true;
+};
+
+function printFirstNPrimes(m) {
+  let count = 0;
+  let num = 2;
+  while (count < m) {
+      if (isPrime(num)) {
+          console.log(num);
+          count++;
+      };
+      num++;
   };
 };
 
-
-function list (item) {
-  var count = [];
-  for (var j=1; j<=item; j++) {
-    if (primes(j)) {
-      count.push(j);
-    };
-  };
-  return count;
-};
-
-var box = primes(digit);
-console.log(box);
-
-
-console.log(list(digit));
+console.log(isPrime(digit));
+printFirstNPrimes(digit);
